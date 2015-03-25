@@ -10,27 +10,29 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        float bankacct = 50000000000.0;
-        if (bankacct <0)
+        float bankacct = 00000000.0;
+        const float fiftythousand =50000;
+            const float onemillion =1000000;
+            const float onebillion =1000000000;
+        
+        if (bankacct <=0)
         {
             NSLog (@"You have a No Money, Fool!");
-        }else if (bankacct >=50000 && bankacct  <1000000 )
+        }
+        else if (bankacct >=fiftythousand && bankacct  <1000000 )
         {
             NSLog (@"You're Rich!");
         }
-        else if (bankacct >1000000 && bankacct <1000000000){
+        else if (bankacct >onemillion && bankacct <1000000000)
+        {
             NSLog (@"You are a Millionaire");
         }
-        else if (bankacct >1000000000) {
-            NSLog (@"You are a Billionaire");
-            
-        }
-        
-    
-            
-            
+        else if (bankacct >onebillion)
         {
-            
+            NSLog (@"You are a Billionaire");
+        }
+        else
+        {
             NSLog (@"You got $Money in your acct, SAWEET!");
         }
     
